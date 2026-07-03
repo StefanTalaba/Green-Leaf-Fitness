@@ -1,0 +1,633 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Green Leaf Fitness - Your journey to a healthier, stronger you starts here. Join our community-focused gym with expert trainers, modern equipment, and flexible membership plans."/>
+    <title>Green Leaf Fitness - Transform Your Health Today</title>
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Green Leaf Fitness - Transform Your Health Today"/>
+    <meta property="og:description" content="Your journey to a healthier, stronger you starts here. Join our community-focused gym with expert trainers, modern equipment, and flexible membership plans."/>
+    <meta property="og:type" content="website"/>
+
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:title" content="Green Leaf Fitness - Transform Your Health Today"/>
+    <meta name="twitter:description" content="Your journey to a healthier, stronger you starts here. Join our community-focused gym with expert trainers, modern equipment, and flexible membership plans."/>
+    <meta name="twitter:image" content="https://cdn-ai.onspace.ai/onspace/project/screenshot/online/pre-site/9begue.jpg"/>
+    <meta name="twitter:url" content="https://www.onspace.ai"/>
+    
+    <!-- TailwindCSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            200: '#bbf7d0',
+                            300: '#86efac',
+                            400: '#4ade80',
+                            500: '#22c55e',
+                            600: '#16a34a',
+                            700: '#15803d',
+                            800: '#166534',
+                            900: '#14532d',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                        display: ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Poppins:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+    
+    <style>
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+        }
+        .bg-gradient-hero {
+            background: linear-gradient(135deg, rgba(20, 83, 45, 0.95) 0%, rgba(22, 163, 74, 0.9) 50%, rgba(34, 197, 94, 0.85) 100%);
+        }
+        .text-shadow {
+            text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+        }
+        .hero-bg {
+            background-image: url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    
+    <!-- Header / Navigation -->
+    <header class="bg-white shadow-md fixed w-full top-0 z-50">
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-leaf text-primary-600 text-2xl"></i>
+                    <h1 class="text-xl sm:text-2xl font-bold text-gray-900">Green Leaf Fitness</h1>
+                </div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#about" class="text-gray-700 hover:text-primary-600 transition font-medium">About</a>
+                    <a href="#services" class="text-gray-700 hover:text-primary-600 transition font-medium">Services</a>
+                    <a href="#membership" class="text-gray-700 hover:text-primary-600 transition font-medium">Membership</a>
+                    <a href="#contact" class="text-gray-700 hover:text-primary-600 transition font-medium">Contact</a>
+                </div>
+                <a href="#membership" class="bg-primary-600 text-white px-4 sm:px-6 py-2 rounded-lg hover:bg-primary-700 transition font-semibold">Join Now</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        
+        <!-- Hero Section -->
+        <section class="hero-bg relative min-h-screen flex items-center justify-center pt-20">
+            <div class="bg-gradient-hero absolute inset-0"></div>
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+                <h2 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 text-shadow">Transform Your Health Today</h2>
+                <p class="text-lg sm:text-xl lg:text-2xl text-white mb-8 max-w-3xl mx-auto leading-relaxed text-shadow">
+                    Your journey to a healthier, stronger you starts here. Join Green Leaf Fitness and experience personalized training, state-of-the-art equipment, and a supportive community.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <a href="#membership" class="bg-white text-primary-700 px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition shadow-lg transform hover:scale-105">
+                        Start Your Journey
+                    </a>
+                    <a href="#services" class="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-primary-700 transition shadow-lg">
+                        Explore Services
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="py-16 sm:py-20 lg:py-24 bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">About Green Leaf Fitness</h2>
+                        <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                            Welcome to Green Leaf Fitness, where we believe that fitness is not just about physical transformation – it&#39;s about cultivating a lifestyle that nurtures your mind, body, and spirit. Founded by health enthusiasts who understand the challenges of modern living, we created a space where everyone feels welcome, supported, and motivated.
+                        </p>
+                        <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                            Our state-of-the-art facility combines cutting-edge equipment with expert guidance from certified trainers who are passionate about helping you achieve your goals. Whether you&#39;re taking your first steps into fitness or you&#39;re a seasoned athlete, Green Leaf Fitness provides the resources, community, and inspiration you need to thrive.
+                        </p>
+                        <p class="text-lg text-gray-700 leading-relaxed">
+                            At Green Leaf, we&#39;re more than a gym – we&#39;re a community dedicated to sustainable health and wellness. Join us and discover what it means to truly flourish.
+                        </p>
+                    </div>
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=800&amp;q=80" alt="Modern gym interior with equipment and natural lighting" class="rounded-2xl shadow-2xl w-full h-auto" loading="lazy"/>
+                        <div class="absolute -bottom-6 -left-6 bg-primary-600 text-white p-6 rounded-xl shadow-xl hidden sm:block">
+                            <p class="text-4xl font-bold">500+</p>
+                            <p class="text-sm">Happy Members</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-16 sm:py-20 lg:py-24 bg-gradient-to-br from-primary-50 to-green-100">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">Our Services</h2>
+                    <p class="text-lg sm:text-xl text-gray-700 max-w-2xl mx-auto leading-relaxed">
+                        Comprehensive fitness solutions tailored to your unique needs and goals
+                    </p>
+                </div>
+
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <!-- Service 1: Personal Training -->
+                    <article class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-2xl transition transform hover:-translate-y-2">
+                        <div class="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                            <i class="fas fa-user-shield text-primary-600 text-3xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Personal Training</h3>
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            Work one-on-one with our certified personal trainers who will design a customized workout plan tailored to your fitness level, goals, and lifestyle. Receive expert guidance, motivation, and accountability as you progress toward your health objectives.
+                        </p>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-primary-600 mr-2"></i>
+                                <span>Customized workout plans</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-primary-600 mr-2"></i>
+                                <span>Nutrition guidance included</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-primary-600 mr-2"></i>
+                                <span>Progress tracking &amp; adjustments</span>
+                            </li>
+                        </ul>
+                    </article>
+
+                    <!-- Service 2: Group Fitness Classes -->
+                    <article class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-2xl transition transform hover:-translate-y-2">
+                        <div class="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                            <i class="fas fa-users text-primary-600 text-3xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Group Fitness Classes</h3>
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            Join our energizing group classes including yoga, pilates, HIIT, spinning, and more. Led by passionate instructors in a motivating group environment, these classes offer variety, community support, and fun workouts that keep you coming back.
+                        </p>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-primary-600 mr-2"></i>
+                                <span>20+ weekly class options</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-primary-600 mr-2"></i>
+                                <span>All fitness levels welcome</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-primary-600 mr-2"></i>
+                                <span>Expert certified instructors</span>
+                            </li>
+                        </ul>
+                    </article>
+
+                    <!-- Service 3: Strength &amp; Cardio Equipment -->
+                    <article class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-2xl transition transform hover:-translate-y-2">
+                        <div class="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                            <i class="fas fa-dumbbell text-primary-600 text-3xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Strength &amp; Cardio Equipment</h3>
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            Access our extensive collection of premium strength training and cardio equipment. From free weights and resistance machines to treadmills and stationary bikes, we provide everything you need for a complete workout in a clean, modern facility.
+                        </p>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-primary-600 mr-2"></i>
+                                <span>State-of-the-art machines</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-primary-600 mr-2"></i>
+                                <span>Free weights &amp; cables</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-primary-600 mr-2"></i>
+                                <span>Dedicated cardio zone</span>
+                            </li>
+                        </ul>
+                    </article>
+
+                    <!-- Service 4: Nutrition Counseling -->
+                    <article class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-2xl transition transform hover:-translate-y-2">
+                        <div class="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                            <i class="fas fa-apple-alt text-primary-600 text-3xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Nutrition Counseling</h3>
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            Optimize your results with personalized nutrition counseling from our registered dietitians. Learn how to fuel your body properly, create sustainable eating habits, and achieve your fitness goals through balanced, science-based nutrition strategies.
+                        </p>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-primary-600 mr-2"></i>
+                                <span>Personalized meal plans</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-primary-600 mr-2"></i>
+                                <span>Supplement recommendations</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-primary-600 mr-2"></i>
+                                <span>Weekly check-ins available</span>
+                            </li>
+                        </ul>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Membership Plans Section -->
+        <section id="membership" class="py-16 sm:py-20 lg:py-24 bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">Membership Plans</h2>
+                    <p class="text-lg sm:text-xl text-gray-700 max-w-2xl mx-auto leading-relaxed">
+                        Choose the plan that fits your lifestyle and budget
+                    </p>
+                </div>
+
+                <!-- Membership Table -->
+                <div class="overflow-x-auto shadow-xl rounded-2xl mb-12">
+                    <table class="w-full bg-white">
+                        <thead class="bg-primary-600 text-white">
+                            <tr>
+                                <th class="px-6 py-4 text-left text-lg font-bold">Plan Type</th>
+                                <th class="px-6 py-4 text-left text-lg font-bold">Duration</th>
+                                <th class="px-6 py-4 text-left text-lg font-bold">Price</th>
+                                <th class="px-6 py-4 text-left text-lg font-bold">Features</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-200">
+                            <tr class="hover:bg-gray-50 transition">
+                                <td class="px-6 py-4 font-semibold text-gray-900">Basic</td>
+                                <td class="px-6 py-4 text-gray-700">Monthly</td>
+                                <td class="px-6 py-4 text-primary-600 font-bold text-xl">$49/month</td>
+                                <td class="px-6 py-4 text-gray-700">
+                                    <ul class="space-y-1">
+                                        <li>• Access to gym equipment</li>
+                                        <li>• Locker room facilities</li>
+                                        <li>• Free Wi-Fi</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr class="hover:bg-gray-50 transition bg-primary-50">
+                                <td class="px-6 py-4 font-semibold text-gray-900 flex items-center">
+                                    Premium
+                                    <span class="ml-2 bg-primary-600 text-white text-xs px-2 py-1 rounded-full">Popular</span>
+                                </td>
+                                <td class="px-6 py-4 text-gray-700">Monthly</td>
+                                <td class="px-6 py-4 text-primary-600 font-bold text-xl">$79/month</td>
+                                <td class="px-6 py-4 text-gray-700">
+                                    <ul class="space-y-1">
+                                        <li>• Everything in Basic</li>
+                                        <li>• Unlimited group classes</li>
+                                        <li>• 2 personal training sessions/month</li>
+                                        <li>• Nutrition consultation</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr class="hover:bg-gray-50 transition">
+                                <td class="px-6 py-4 font-semibold text-gray-900">Elite</td>
+                                <td class="px-6 py-4 text-gray-700">Monthly</td>
+                                <td class="px-6 py-4 text-primary-600 font-bold text-xl">$129/month</td>
+                                <td class="px-6 py-4 text-gray-700">
+                                    <ul class="space-y-1">
+                                        <li>• Everything in Premium</li>
+                                        <li>• 8 personal training sessions/month</li>
+                                        <li>• Weekly nutrition counseling</li>
+                                        <li>• Guest passes (2/month)</li>
+                                        <li>• Priority class booking</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr class="hover:bg-gray-50 transition">
+                                <td class="px-6 py-4 font-semibold text-gray-900">Annual Basic</td>
+                                <td class="px-6 py-4 text-gray-700">12 Months</td>
+                                <td class="px-6 py-4 text-primary-600 font-bold text-xl">
+                                    $499/year
+                                    <span class="block text-sm text-gray-500">Save $89</span>
+                                </td>
+                                <td class="px-6 py-4 text-gray-700">
+                                    <ul class="space-y-1">
+                                        <li>• Same as Basic monthly</li>
+                                        <li>• 2 months free value</li>
+                                        <li>• No commitment after year</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr class="hover:bg-gray-50 transition">
+                                <td class="px-6 py-4 font-semibold text-gray-900">Annual Premium</td>
+                                <td class="px-6 py-4 text-gray-700">12 Months</td>
+                                <td class="px-6 py-4 text-primary-600 font-bold text-xl">
+                                    $799/year
+                                    <span class="block text-sm text-gray-500">Save $149</span>
+                                </td>
+                                <td class="px-6 py-4 text-gray-700">
+                                    <ul class="space-y-1">
+                                        <li>• Same as Premium monthly</li>
+                                        <li>• 2 months free value</li>
+                                        <li>• Lock in current pricing</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- How to Join Section -->
+                <div class="bg-gradient-to-br from-primary-600 to-primary-700 rounded-2xl p-8 sm:p-12 text-white shadow-2xl">
+                    <h3 class="text-2xl sm:text-3xl font-bold mb-8 text-center">How to Join Green Leaf Fitness</h3>
+                    <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                        <div>
+                            <ol class="space-y-6">
+                                <li class="flex items-start">
+                                    <span class="flex-shrink-0 w-10 h-10 bg-white text-primary-600 rounded-full flex items-center justify-center font-bold text-lg mr-4">1</span>
+                                    <div>
+                                        <h4 class="font-bold text-xl mb-2">Visit Our Facility</h4>
+                                        <p class="text-primary-50 leading-relaxed">Schedule a free tour of our gym to explore our facilities and meet our friendly staff.</p>
+                                    </div>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="flex-shrink-0 w-10 h-10 bg-white text-primary-600 rounded-full flex items-center justify-center font-bold text-lg mr-4">2</span>
+                                    <div>
+                                        <h4 class="font-bold text-xl mb-2">Choose Your Plan</h4>
+                                        <p class="text-primary-50 leading-relaxed">Select the membership plan that best fits your goals and budget from our flexible options.</p>
+                                    </div>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="flex-shrink-0 w-10 h-10 bg-white text-primary-600 rounded-full flex items-center justify-center font-bold text-lg mr-4">3</span>
+                                    <div>
+                                        <h4 class="font-bold text-xl mb-2">Complete Registration</h4>
+                                        <p class="text-primary-50 leading-relaxed">Fill out our simple signup form and provide necessary health information for your safety.</p>
+                                    </div>
+                                </li>
+                            </ol>
+                        </div>
+                        <div>
+                            <ol class="space-y-6" start="4">
+                                <li class="flex items-start">
+                                    <span class="flex-shrink-0 w-10 h-10 bg-white text-primary-600 rounded-full flex items-center justify-center font-bold text-lg mr-4">4</span>
+                                    <div>
+                                        <h4 class="font-bold text-xl mb-2">Set Up Payment</h4>
+                                        <p class="text-primary-50 leading-relaxed">Provide your payment details and set up automatic billing for hassle-free membership management.</p>
+                                    </div>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="flex-shrink-0 w-10 h-10 bg-white text-primary-600 rounded-full flex items-center justify-center font-bold text-lg mr-4">5</span>
+                                    <div>
+                                        <h4 class="font-bold text-xl mb-2">Get Your Access Card</h4>
+                                        <p class="text-primary-50 leading-relaxed">Receive your personalized gym access card and download our mobile app for easy check-ins.</p>
+                                    </div>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="flex-shrink-0 w-10 h-10 bg-white text-primary-600 rounded-full flex items-center justify-center font-bold text-lg mr-4">6</span>
+                                    <div>
+                                        <h4 class="font-bold text-xl mb-2">Start Your Journey!</h4>
+                                        <p class="text-primary-50 leading-relaxed">Begin your fitness journey with a complimentary orientation and goal-setting session with our trainers.</p>
+                                    </div>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="text-center mt-10">
+                        <a href="#contact" class="inline-block bg-white text-primary-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition shadow-lg transform hover:scale-105">
+                            Get Started Today
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Section -->
+        <section class="py-16 sm:py-20 lg:py-24 bg-gray-100">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">Experience Green Leaf Fitness</h2>
+                    <p class="text-lg sm:text-xl text-gray-700 max-w-2xl mx-auto leading-relaxed">
+                        Take a virtual tour of our facilities and see what makes us different
+                    </p>
+                </div>
+                <div class="max-w-5xl mx-auto">
+                    <div class="relative" style="padding-bottom: 56.25%; height: 0; overflow: hidden;">
+                        <iframe src="https://www.youtube.com/embed" title="Green Leaf Fitness Gym Tour" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" class="absolute top-0 left-0 w-full h-full rounded-2xl shadow-2xl" loading="lazy">
+                        </iframe>
+                    </div>
+                    <p class="text-center text-gray-600 mt-6 text-sm">
+                        Video: Motivational fitness journey showcase
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-16 sm:py-20 lg:py-24 bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">Get In Touch</h2>
+                    <p class="text-lg sm:text-xl text-gray-700 max-w-2xl mx-auto leading-relaxed">
+                        Have questions? We&#39;re here to help you start your fitness journey
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                    
+                    <!-- Phone -->
+                    <div class="bg-gradient-to-br from-primary-50 to-green-100 rounded-2xl p-8 text-center hover:shadow-lg transition">
+                        <div class="bg-primary-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-phone-alt text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Phone</h3>
+                        <p class="text-gray-700 mb-2">Call us anytime</p>
+                        <a href="tel:+15551234567" class="text-primary-600 font-semibold hover:text-primary-700">
+                            (555) 123-4567
+                        </a>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="bg-gradient-to-br from-primary-50 to-green-100 rounded-2xl p-8 text-center hover:shadow-lg transition">
+                        <div class="bg-primary-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-envelope text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Email</h3>
+                        <p class="text-gray-700 mb-2">Send us a message</p>
+                        <a href="mailto:info@greenleaffitness.com" class="text-primary-600 font-semibold hover:text-primary-700">
+                            info@greenleaffitness.com
+                        </a>
+                    </div>
+
+                    <!-- Location -->
+                    <div class="bg-gradient-to-br from-primary-50 to-green-100 rounded-2xl p-8 text-center hover:shadow-lg transition">
+                        <div class="bg-primary-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-map-marker-alt text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Location</h3>
+                        <p class="text-gray-700 mb-2">Visit us at</p>
+                        <p class="text-primary-600 font-semibold">
+                            123 Wellness Avenue<br/>
+                            Healthville, HV 12345
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- Operating Hours -->
+                <div class="mt-12 max-w-2xl mx-auto bg-gray-50 rounded-2xl p-8">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">Operating Hours</h3>
+                    <div class="grid sm:grid-cols-2 gap-4 text-center sm:text-left">
+                        <div class="flex justify-between items-center border-b border-gray-200 pb-3">
+                            <span class="font-semibold text-gray-700">Monday - Friday</span>
+                            <span class="text-primary-600 font-bold">5:00 AM - 11:00 PM</span>
+                        </div>
+                        <div class="flex justify-between items-center border-b border-gray-200 pb-3">
+                            <span class="font-semibold text-gray-700">Saturday</span>
+                            <span class="text-primary-600 font-bold">7:00 AM - 9:00 PM</span>
+                        </div>
+                        <div class="flex justify-between items-center border-b border-gray-200 pb-3">
+                            <span class="font-semibold text-gray-700">Sunday</span>
+                            <span class="text-primary-600 font-bold">8:00 AM - 8:00 PM</span>
+                        </div>
+                        <div class="flex justify-between items-center border-b border-gray-200 pb-3">
+                            <span class="font-semibold text-gray-700">Holidays</span>
+                            <span class="text-primary-600 font-bold">9:00 AM - 6:00 PM</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                
+                <!-- Brand -->
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fas fa-leaf text-primary-500 text-2xl"></i>
+                        <h3 class="text-xl font-bold">Green Leaf Fitness</h3>
+                    </div>
+                    <p class="text-gray-400 leading-relaxed">
+                        Empowering you to achieve your health and fitness goals in a supportive, motivating environment.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#about" class="text-gray-400 hover:text-primary-500 transition">About Us</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-primary-500 transition">Services</a></li>
+                        <li><a href="#membership" class="text-gray-400 hover:text-primary-500 transition">Membership</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-primary-500 transition">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li class="text-gray-400">Personal Training</li>
+                        <li class="text-gray-400">Group Classes</li>
+                        <li class="text-gray-400">Nutrition Counseling</li>
+                        <li class="text-gray-400">Equipment Access</li>
+                    </ul>
+                </div>
+
+                <!-- Social Media -->
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="bg-primary-600 hover:bg-primary-700 w-10 h-10 rounded-full flex items-center justify-center transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="bg-primary-600 hover:bg-primary-700 w-10 h-10 rounded-full flex items-center justify-center transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="bg-primary-600 hover:bg-primary-700 w-10 h-10 rounded-full flex items-center justify-center transition">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="bg-primary-600 hover:bg-primary-700 w-10 h-10 rounded-full flex items-center justify-center transition">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                    <p class="text-gray-400 mt-4 text-sm">
+                        Stay connected for fitness tips, class schedules, and special offers!
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Copyright -->
+            <div class="border-t border-gray-800 pt-8 text-center">
+                <p class="text-gray-400 text-sm">
+                    © 2025 Green Leaf Fitness. All rights reserved. | 
+                    <a href="#" class="hover:text-primary-500 transition">Privacy Policy</a> | 
+                    <a href="#" class="hover:text-primary-500 transition">Terms of Service</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Smooth Scroll Script -->
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const headerOffset = 80;
+                    const elementPosition = target.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Add scroll effect to header
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('shadow-xl');
+            } else {
+                header.classList.remove('shadow-xl');
+            }
+        });
+    </script>
+
+
+
+</body></html>
